@@ -1,0 +1,25 @@
+version: "3.3"
+services:
+  node-postgres-dbt:
+    image: postgres_dbt:latest
+    container_name: postgres_dbt_container
+#    hostname: node-postgres-host-1
+    ports:
+      - "5401:5432"
+#    networks:
+#      - net
+
+#networks:
+#  net:
+#    name: net
+#    driver: bridge
+#    ipam:
+#      driver: default
+#      config:
+#        - subnet: 172.25.0.0/24
+
+
+#volumes:
+#  db_master_1:
+#  db_seg_1:
+#  db_seg_2:
